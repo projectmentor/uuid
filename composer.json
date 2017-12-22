@@ -1,0 +1,19 @@
+{
+    "name": "projectmentor/uuid",
+    "description": "Static UUID utilities.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "David Faith",
+            "email": "david@projectmentor.org"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "projectmentor\\UUID\\": "src"
+        }
+    }
+}
