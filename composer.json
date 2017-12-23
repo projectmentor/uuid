@@ -10,10 +10,28 @@
     ],
     "minimum-stability": "dev",
     "require": {},
-    "require-dev": {},
+    "require-dev": {
+        "phpunit/phpunit": "6.5.x-dev",
+        "orchestra/testbench": "3.5.x-dev"
+    },
     "autoload": {
         "psr-4": {
             "projectmentor\\UUID\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "projectmentor\\UUID\\Test\\": "tests/"
+        }
+    },
+   "extra": {
+        "laravel": {
+            "providers": [
+                "Barryvdh\\Debugbar\\ServiceProvider"
+            ],
+            "aliases": {
+                "Debugbar": "Barryvdh\\Debugbar\\Facade"
+            }
         }
     }
 }
